@@ -1,0 +1,300 @@
+body,
+html {
+    background-color: white;
+    overflow-x: hidden;
+    /*    overflow-y: hidden;*/
+    margin: 0;
+    padding: 0;
+}
+
+#home {
+    width: 100vw;
+    height: 100vh;
+    background-image: url(/img/home.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+
+    color: white;
+
+}
+
+.home-child {
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0.7
+}
+
+.nav-bar {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    width: 100vw;
+    background-color: black;
+    opacity: 0.7;
+    position: fixed;
+}
+
+.logo {
+    align-content: flex-start;
+    font-family: Comic Sans MS;
+    font-weight: 800;
+    font-size: 30px;
+    padding-left: 10vw;
+    padding-right: 30vw;
+}
+
+.nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.nav-link {
+    color: white;
+    font-weight: 800;
+    padding-left: 3vw;
+    text-decoration: none;
+}
+
+.nav-link:hover {
+    color: white;
+    opacity: 0.4;
+}
+
+.nav-link:active {
+    color: white;
+    opacity: 0.4;
+}
+
+.nav-item {
+    /*    text-decoration: none;*/
+    list-style: none;
+}
+
+.my-name {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#p8 {
+
+    background-color: transparent;
+    height: 32vh;
+    margin-top: 30vh;
+    width: 33vw;
+    font-size: 40px;
+    font-family: Calibri (Body);
+    font-weight: 800;
+    padding-left: 3vw;
+    align-content: space-between;
+    border-left: 5px solid darkred;
+    margin-right: 44vw;
+}
+
+.button {
+    text-decoration: none;
+    color: white;
+    text-align: center;
+    font-family: Calibri (Body);
+    border: 2px solid white;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    margin-top: 15vh;
+    /*    cursor: pointer;*/
+}
+
+#about-me {
+    background-image: url(/img/about.jpg);
+    background-size: cover;
+    width: 100vw;
+    height: 70vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.heading {
+    text-align: right;
+    border-right: 4px solid darkred;
+    height: 12vh;
+    width: 35vw;
+    margin-left: 40vw;
+    font-family: Comic Sans MS;
+    font-size: 20px;
+    align-content: space-around;
+    margin-top: 10vh;
+    margin-right: 3vw;
+    padding-right: 2vw;
+
+}
+
+.p1-about {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10vh;
+    font-family: Calibri (Body);
+    font-size: 18px;
+    padding-right: 8vw;
+}
+
+#features {
+    /*    list-style: outside;*/
+    font-family: Comic Sans MS;
+    font-size: 20px;
+}
+
+#portifolio {
+    background-color: whitesmoke;
+    padding-right: 10vw;
+    padding-left: 10vw;
+    padding-top: 10vh;
+    align-content: center;
+
+}
+
+.header {
+    font-family: Comic Sans MS;
+    font-size: 28px;
+    /*    padding-bottom: 15vh;*/
+    text-align: center;
+}
+
+.img img {
+    width: 25vw;
+    padding-right: 1vw;
+    padding-bottom: 2vh;
+}
+
+
+.img {
+    /*
+    display: flex;
+    flex-direction: row;
+*/
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas:
+        "img img img"
+        "img img img"
+        "img img img"
+        "img img img"
+        "img img img";
+
+}
+
+#testimonials {
+    padding-right: 10vw;
+    padding-left: 10vw;
+    margin-bottom: 10vh;
+    /*
+    display: flex;
+    flex-direction: column;
+*/
+}
+
+.client {
+    display: flex;
+    flex-direction: row;
+    margin-right: 10vw;
+
+}
+
+.client2 {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vw;
+}
+
+.client1 {
+    width: 23vw;
+    background-color: whitesmoke;
+    border-left: 4px solid darkgray;
+    margin-top: 1vh;
+    padding-left: 2vw;
+    font-size: 20px;
+}
+
+.name {
+    padding-top: 4vh;
+}
+
+#name {
+    color: black;
+    opacity: 0.6;
+    font-family: Comic Sans MS;
+    font-weight: bolder;
+}
+
+#contact {
+    background-color: black;
+    opacity: 0.8;
+    color: white;
+    padding-top: 10vh;
+    height: 80vh;
+    width: 100vw;
+}
+
+.p1 {
+    font-family: Comic Sans MS;
+    padding-bottom: 5vh;
+    padding-top: 3vh;
+    /*    text-align: center;
+    */
+    font-size: 23px;
+    margin-left: 20vw;
+}
+
+.form input {
+    margin-left: 20vw;
+    margin-right: 20vw;
+    width: 50vw;
+    height: 4vh;
+    align-items: center;
+    margin-bottom: 2vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Calibri (Body);
+}
+
+.form textarea {
+    margin-left: 20vw;
+    margin-right: 20vw;
+    width: 50vw;
+    height: 15vh;
+    align-items: center;
+    margin-bottom: 2vh;
+    display: flex;
+    flex-direction: column;
+    font-family: Calibri (Body);
+}
+
+.b {
+    background-color: darkred;
+    color: white;
+    font-family: Calibri (Body);
+    width: 15vw;
+    height: 5vh;
+    margin-left: 35vw;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    margin-left: 15vw;
+}
+
+.img6 img {
+    width: 600px;
+    height: 400px;
+
+}
+
+.img6 p {
+    position: relative;
+    top: 200px;
+
+}
